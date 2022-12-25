@@ -38,10 +38,6 @@ function getQuestion() {
   titleEl.textContent = currentQuestion.question;
 
   // clear out any old question choices
-  //choicesEl.innerHTML = '';
- console.log(currentQuestion.answer)
-  // loop over choices
-  //for (var i = 0; i < currentQuestion.choices.length; i++) {
     // create new button for each choice
     var choiceA = currentQuestion.choices.a;
     var choiceB = currentQuestion.choices.b;
@@ -73,7 +69,17 @@ function questionClick(event) {
   if (buttonEl.matches('.choices')) {
     return;
   }
+  if (buttonEl.value === questions[currentQuestionIndex].answer) {
+    // penalize time
+    time -= 10;
 
+    if (time < 0) {
+      time = 0;
+    }
+
+    // display new time on page
+    timerEl.textContent = time;
+  };
   // check if user guessed wrong
   if (buttonEl.value !== questions[currentQuestionIndex].answer) {
     // penalize time
