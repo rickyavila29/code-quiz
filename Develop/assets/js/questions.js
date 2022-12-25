@@ -1,35 +1,48 @@
 // list of all questions, choices, and answers
 var questions = [
-  {
-    title: 'Fill in the blank: if / _____ statement.',
-    choices: ['or', 'and', 'not', 'else'],
-    answer: 'else',
+ { question: 'Who is the leader of the Strawhat Pirates?',
+   choices: {
+    a: "Red-Haired Shanks",
+    b: "Rorona Zoro",
+    c: "Monkey D. Luffy",
+    },
+    answer: "c",
+  
   },
   {
-    title: 'Which of the following do not belong:',
-    choices: ['strings', 'booleans', 'alerts', 'numbers'],
-    answer: 'alerts',
+    question: 'Which of following is not a devil fruit user?',
+   choices: {
+    a: "Logia",
+    b: "Zoan",
+    c: "Saiyan",
+   },
+    answer: "c",
   },
   {
-    title: 'Arrays in JavaScript can be used to store ____.',
-    choices: [
-      'numbers and strings',
-      'other arrays',
-      'booleans',
-      'all of the above',
-    ],
-    answer: 'all of the above',
+    question: 'Who is the navigator for the Strawhats?',
+   choices: {
+    a: "Columbus",
+    b: "Nami",
+    c: "Zoro",
+   },
+    answer: "b",
   },
   {
-    title:
-      'String values must be enclosed within ____ when being assigned to variables.',
-    choices: ['commas', 'curly brackets', 'quotes', 'parentheses'],
-    answer: 'quotes',
+    question: 'What is the goal of Luffy and his crew?',
+   choices: {
+    a: "To reinvent the wheel",
+      b: "Destroy the world",
+      c: "Obtain the One Piece",
+   },
+      answer: "c",
   },
   {
-    title:
-      'A very useful tool used during development and debugging for printing content to the debugger is:',
-    choices: ['JavaScript', 'terminal / bash', 'for loops', 'console.log'],
-    answer: 'console.log',
+    question: 'Who was the King of Pirates?',
+   choices: {
+    a: "Gol D. Roger",
+      b: "Alexandar The Great",
+      c: "John Cena",
+   },
+      answer: "a",
   },
 ];
