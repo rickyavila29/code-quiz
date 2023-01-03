@@ -69,17 +69,7 @@ function questionClick(event) {
   if (buttonEl.matches('.choices')) {
     return;
   }
-  if (buttonEl.value === questions[currentQuestionIndex].answer) {
-    // penalize time
-    time -= 10;
 
-    if (time < 0) {
-      time = 0;
-    }
-
-    // display new time on page
-    timerEl.textContent = time;
-  };
   // check if user guessed wrong
   if (buttonEl.value !== questions[currentQuestionIndex].answer) {
     // penalize time
